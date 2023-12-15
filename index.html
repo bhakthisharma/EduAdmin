@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg" />
+    <title>EduAdmin</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>EduAdmin</h1>
+      <div class="form">
+        <div class="db-info">
+          <label id="text">Student added</label>
+        </div>
+        <div class="data-field">
+          <form action="">
+            <label for="">First name</label>
+            <input
+              type="text"
+              name="First name"
+              placeholder="Enter first name"
+              required
+            />
+            <label for="">Last name</label>
+            <input
+              type="text"
+              name="last name"
+              placeholder="Enter last name"
+              required
+            />
+            <label for="">Roll No</label>
+            <input
+              type="text"
+              name="roll no"
+              placeholder="Enter roll number"
+              required
+            />
+            <input id="button" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <td>First name</td>
+            <td>last name</td>
+            <td>Roll no</td>
+            <td>Actions</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hari</td>
+            <td>Krishna</td>
+            <td>277528</td>
+            <td>
+              <div class="actions">
+                <button id="edit">Edit</button>
+                <button id="delete">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Hari</td>
+            <td>Krishna</td>
+            <td>277528</td>
+            <td>
+              <div class="actions">
+                <button id="edit">Edit</button>
+                <button id="delete">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Hari</td>
+            <td>Krishna</td>
+            <td>277528</td>
+            <td>
+              <div class="actions">
+                <button id="edit">Edit</button>
+                <button id="delete">Delete</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
