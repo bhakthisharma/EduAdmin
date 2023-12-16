@@ -13,7 +13,6 @@ function addStudent(e) {
   addTableRow(firstName, lastName, rollNo);
 }
 function addTableRow(firstName, lastName, rollNo) {
-  console.log("Hi");
   const newRow = document.createElement("tr");
 
   const firstNameCell = document.createElement("td");
@@ -44,4 +43,11 @@ function addTableRow(firstName, lastName, rollNo) {
 
   const tableBody = document.getElementById("tableBody");
   tableBody.appendChild(newRow);
+}
+
+document.addEventListener("click", deleteStudent);
+
+function deleteStudent(e) {
+  if (e.target.classList.contains("deleteButton"))
+    e.target.parentNode.parentNode.remove();
 }
