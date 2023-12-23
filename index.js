@@ -1,16 +1,21 @@
-document.getElementById("buttonSubmit").addEventListener("click", addStudent);
+document.getElementById("buttonSubmit").addEventListener("click", (e) => {
+  addStudent(e);
+});
 
 function addStudent(e) {
   e.preventDefault();
 
-  const firstName = document.getElementById("firstName").value;
-  const lastName = document.getElementById("lastName").value;
-  const rollNo = document.getElementById("rollNo").value;
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const rollNo = document.getElementById("rollNo");
 
   console.log("Firstname:", firstName);
   console.log("Lastname:", lastName);
   console.log("Rollno:", rollNo);
-  addTableRow(firstName, lastName, rollNo);
+  addTableRow(firstName.value, lastName.value, rollNo.value);
+  firstName.value = "";
+  lastName.value = "";
+  rollNo.value = "";
 }
 function addTableRow(firstName, lastName, rollNo) {
   const newRow = document.createElement("tr");
